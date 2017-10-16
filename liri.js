@@ -1,12 +1,7 @@
 var keys = require('./keys.js');
 var request = require('request');
 var twitter = require('twitter');
-var Spotify = require('node-spotify-api');
 var fs=require('fs');
-var spotify =new Spotify({
-  id: '2a084d9896d64ed6995719f504eb401e',
-  secret: 'de52c8cb1ac34c658fdadca1c2357714'
-});
 var Twitter = new twitter(keys.twitterKeys);
 var mult_word=process.argv;
 var arg= process.argv[2];
